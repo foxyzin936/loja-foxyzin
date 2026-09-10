@@ -1,0 +1,26 @@
+[
+  {
+    "id": "kb-pro-01",
+    "name": "Teclado Mecânico RGB Pro",
+    "price": 349.90,
+    "image": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": "mouse-x-02",
+    "name": "Mouse Gamer Óptico X",
+    "price": 199.90,
+    "image": "https://images.unsplash.com/photo-1593642633279-1796119d5482?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": "head-elite-03",
+    "name": "Headset Elite 7.1",
+    "price": 279.90,
+    "image": "https://images.unsplash.com/photo-1606813905273-1c5b5a4a9c6e?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": "mousepad-neo-04",
+    "name": "Mousepad RGB Neo",
+    "price": 89.90,
+    "image": "https://images.unsplash.com/photo-1587202372775-98d1a6a7c4a3?q=80&w=800&auto=format&fit=crop"
+  }
+]

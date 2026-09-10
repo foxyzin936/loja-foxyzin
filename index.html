@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loja Foxyzin — Periféricos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Loja Foxyzin</h1>
+    <nav>
+      <button id="cart-btn">Carrinho (<span id="cart-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Periféricos com performance e estilo</h2>
+      <p>Teclados, mouses e headsets para elevar seu game.</p>
+    </section>
+
+    <section id="products" class="products-grid" aria-live="polite">
+      <!-- Produtos carregados por app.js -->
+    </section>
+  </main>
+
+  <div id="cart-modal" class="cart-modal" aria-hidden="true">
+    <div class="cart-content">
+      <button id="close-cart" class="close">×</button>
+      <h3>Seu Carrinho</h3>
+      <div id="cart-items"></div>
+      <div class="cart-footer">
+        <div>Total: R$ <span id="cart-total">0.00</span></div>
+        <button id="checkout-btn" class="primary">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© Loja Foxyzin — Periféricos</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

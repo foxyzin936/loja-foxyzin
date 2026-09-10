@@ -1,0 +1,53 @@
+:root{
+  --bg:#0b0f12; --card:#0f1720; --accent:#ff0066; --muted:#9aa4b2; --text:#ecf0f1;
+  --max-width:1100px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:linear-gradient(180deg,#05060a, #08121a);
+  color:var(--text); min-height:100vh; display:flex; flex-direction:column;
+}
+
+.site-header{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:18px; max-width:var(--max-width); margin:0 auto; width:100%;
+}
+
+.site-header h1{margin:0; font-size:1.2rem; color:var(--accent)}
+.site-header button{background:transparent; border:1px solid var(--muted); color:var(--text); padding:8px 12px; border-radius:8px; cursor:pointer}
+
+.hero{
+  text-align:center; padding:40px 20px; max-width:var(--max-width); margin:0 auto;
+}
+.hero h2{margin:0 0 8px 0; font-size:1.6rem}
+.hero p{color:var(--muted); margin:0}
+
+.products-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;
+  padding:20px; max-width:var(--max-width); margin:0 auto 40px;
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.03); padding:14px; border-radius:10px; display:flex; flex-direction:column;
+}
+
+.card img{width:100%; height:140px; object-fit:cover; border-radius:6px;}
+.card h4{margin:10px 0 6px 0}
+.card p{margin:0 0 10px 0; color:var(--muted); font-size:0.95rem}
+.card .price{margin-top:auto; font-weight:700}
+.card button{margin-top:10px; background:var(--accent); color:white; border:none; padding:10px; border-radius:8px; cursor:pointer}
+
+.site-footer{margin-top:auto; text-align:center; padding:18px; color:var(--muted)}
+
+/* Cart modal */
+.cart-modal{position:fixed; inset:0; background:rgba(0,0,0,0.6); display:none; align-items:center; justify-content:center;}
+.cart-modal[aria-hidden="false"]{display:flex;}
+.cart-content{background:var(--card); padding:20px; border-radius:12px; width:min(600px,95%); max-height:80vh; overflow:auto; position:relative}
+.cart-content .close{position:absolute; right:10px; top:10px; background:transparent; border:none; font-size:22px; color:var(--muted); cursor:pointer}
+.cart-item{display:flex; gap:10px; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.03)}
+.cart-item img{width:56px; height:56px; object-fit:cover; border-radius:6px}
+.cart-footer{display:flex; justify-content:space-between; align-items:center; margin-top:12px}
+.primary{background:var(--accent); color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer}

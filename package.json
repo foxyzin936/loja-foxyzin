@@ -1,0 +1,10 @@
+{
+  "name": "loja-foxyzin",
+  "version": "1.0.0",
+  "description": "Loja Foxyzin - demo",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "stripe": "^12.0.0"
+  }
+}
